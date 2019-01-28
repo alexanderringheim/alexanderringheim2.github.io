@@ -1,29 +1,74 @@
 body {
     background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url("../images/background.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 header {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
+    width: 95%;
     z-index: 1;
 
     display: flex;
     flex-direction: column;
+}
 
-    background-color: white;
-
+header .logo {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(250, 249, 249, 0.884);
+    border-radius: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 5px;
 }
 
 header img {
-    height: 120px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
     vertical-align: middle;
+    margin-left: 25px;
+    margin-bottom: 5px;
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid rgb(0, 0, 0);
+}
+
+header .title {
+    
+    margin-left: 10px;
+}
+
+header .title h1 {
+    margin-left: 10px;
+    
+}
+
+header .title i {
+    
+    padding: 5px;
+    font-weight: 200;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+header .links {
+    z-index: 2;
+    background-color: rgb(41, 40, 40);
+    box-shadow: 3px 3px 2px 2px lightgray;
+    padding: 20px;
+    border-radius: 2px;
 }
 
 header a {
-    color: black;
+    color: white;;
     text-decoration: none;
     padding: 10px;
     font-size: 25px;
@@ -33,6 +78,21 @@ header a {
 
 header a:hover {
     text-decoration: underline;
-    background-color: whitesmoke;
+    background-color: rgb(31, 30, 30);
     z-index: 2;
+}
+
+.line-black {
+    border-top: 2px solid black;
+}
+
+
+main {
+    margin-top: 50px;
+    width: 90%;
+    min-height: 100px;
+    background-color: white;
+    border-radius: 2px;
+    z-index: 1;
+    box-shadow: 3px 3px 2px 2px lightgray;
 }
