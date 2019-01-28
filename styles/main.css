@@ -8,29 +8,30 @@ body {
     background-repeat: repeat;
     background-size: cover;
 
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 75px;
+    margin-right: 75px;
 }
 
 header {
-    width: 95%;
+    width: 100%;
     z-index: 1;
 
     display: flex;
     flex-direction: column;
 }
 
-header .logo {
+.logo {
     display: flex;
     flex-direction: row;
     background-color: rgba(250, 249, 249, 0.884);
     border-radius: 40px;
+    padding-top: 5px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 5px;
 }
 
-header img {
+header #default-logo {
     height: 100px;
     width: 100px;
     vertical-align: middle;
@@ -41,18 +42,11 @@ header img {
     border: 5px solid rgb(0, 0, 0);
 }
 
-header .title {
-    
+.title, .title h1 {
     margin-left: 10px;
 }
 
-header .title h1 {
-    margin-left: 10px;
-    
-}
-
-header .title i {
-    
+.title i {
     padding: 5px;
     font-weight: 200;
     font-size: 18px;
@@ -60,6 +54,8 @@ header .title i {
 }
 
 header .links {
+    display: flex;
+    flex-direction: row;
     z-index: 2;
     background-color: rgb(41, 40, 40);
     box-shadow: 3px 3px 2px 2px lightgray;
@@ -67,7 +63,15 @@ header .links {
     border-radius: 2px;
 }
 
-header a {
+header .links #hidden-logo {
+    display: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+header .links a {
     color: white;;
     text-decoration: none;
     padding: 10px;
@@ -76,10 +80,26 @@ header a {
     border-radius: 5px;
 }
 
-header a:hover {
+header .links a:hover {
     text-decoration: underline;
     background-color: rgb(31, 30, 30);
     z-index: 2;
+}
+
+.links #small-screen-container {
+    display: none;
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.links #small-screen-container img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
 }
 
 .line-black {
@@ -88,11 +108,69 @@ header a:hover {
 
 
 main {
-    margin-top: 50px;
-    width: 90%;
+    margin-top: 30px;
+    width: 100%;
     min-height: 100px;
     background-color: white;
     border-radius: 2px;
     z-index: 1;
     box-shadow: 3px 3px 2px 2px lightgray;
+}
+
+footer {
+    
+}
+
+
+
+
+@media screen and (max-width: 900px)
+{
+    header .links a {
+        font-size: 20px;
+        font-weight: 300;
+    }
+    @media screen and (max-width: 800px) 
+    {
+        body {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        header .links a {
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        .links #small-screen-container {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+@media screen and (max-height: 500px)
+{
+    body {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .logo {
+        display: none;
+    }
+
+    header {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        z-index: 3;
+    }
+
+    main {
+        margin-top: 90px;
+    }
+    .links #hidden-logo {
+        display: block;
+        background-color: whitesmoke;
+    }
 }
