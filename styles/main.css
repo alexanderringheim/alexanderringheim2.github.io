@@ -96,24 +96,47 @@ header .links a:hover {
     cursor: pointer;
 }
 
-.links #small-screen-container img {
+#small-screen-container img {
     width: 40px;
     height: 40px;
     border-radius: 5px;
 }
 
+#small-screen-container .hidden-links {
+    position: absolute;
+}
+
+#small-screen-container .hidden-links a {
+    display: none;
+    position: relative;
+    right: 60px;
+    top: 40px;
+    padding: 10px;
+    background-color: rgb(192, 191, 191);
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    z-index: 4;
+    border-radius: 0px;
+}
+
+
+.hidden-links a:hover {
+    text-decoration: underline;
+}
+
 .line-black {
-    border-top: 2px solid black;
+    border-top: 1px solid black;
 }
 
 
 main {
+    position: relative;
     margin-top: 30px;
     width: 100%;
     min-height: 100px;
     background-color: white;
     border-radius: 2px;
-    z-index: 1;
     box-shadow: 3px 3px 2px 2px lightgray;
 }
 
@@ -142,9 +165,16 @@ footer {
             font-weight: 300;
         }
 
-        .links #small-screen-container {
-            display: flex;
-            flex-direction: row-reverse;
+        @media screen and (max-width: 600px)
+        {
+            .links #small-screen-container {
+                display: flex;
+                min-width: 40px;
+                min-height: 40px;
+            }
+            .links .link {
+                display: none;
+            }
         }
     }
 }
@@ -169,7 +199,7 @@ footer {
     main {
         margin-top: 90px;
     }
-    .links #hidden-logo {
+    header .links #hidden-logo {
         display: block;
         background-color: whitesmoke;
     }

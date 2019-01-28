@@ -22,12 +22,17 @@
         </section>
         <section class="links">
             <img id="hidden-logo" src="../images/logo.png" alt="">
-            <a href="" id="home">Home</a>
-            <a href="" class="link">Calculator</a>
-            <a href="" class="link"></a>
+            <a href="" class="link" id="home">Home</a>
+            <a href="" class="link" id="calculator">Calculator</a>
+            <a href="" class="link" id="bytes">Bytes</a>
 
-            <section class="" id="small-screen-container">
-                <img src="../images/nav_icon.png" width="40" height="40" alt="">
+            <section class="" id="small-screen-container" onclick="showLinks()">
+                <img src="../images/nav_icon.png" id="links-img" width="40" height="40" alt="">
+                <section class="hidden-links" id="hidden-links-id">
+                    <a class="linksHidden" href="">Home</a>
+                    <a class="linksHidden" href="">Calculator</a>
+                    <a class="linksHidden" href="">Bytes</a>
+                </section>
             </section>
         </section>
     </header>
