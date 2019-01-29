@@ -8,8 +8,8 @@ body {
     background-repeat: repeat;
     background-size: cover;
 
-    margin-left: 75px;
-    margin-right: 75px;
+    margin-left: 125px;
+    margin-right: 125px;
 }
 
 header {
@@ -71,10 +71,29 @@ header .links #hidden-logo {
     margin-right: 10px;
 }
 
+header .links #hidden-title {
+    margin-right: 25px;
+}
+
+header .links h4, header .links i {
+    display: none;
+    margin-left: 5px;
+    color: white;
+    padding: 0px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    font-weight: 200;
+}
+header .links i {
+    font-weight: 100;
+    margin-bottom: 0px;
+}   
+
 header .links a {
     color: white;;
     text-decoration: none;
     padding: 10px;
+    margin-right: 20px;
     font-size: 25px;
     font-weight: bold;
     border-radius: 5px;
@@ -112,7 +131,7 @@ header .links a:hover {
     right: 60px;
     top: 40px;
     padding: 10px;
-    background-color: rgb(192, 191, 191);
+    background-color: rgb(231, 230, 230);
     color: black;
     font-size: 20px;
     font-weight: 600;
@@ -123,12 +142,16 @@ header .links a:hover {
 
 .hidden-links a:hover {
     text-decoration: underline;
+    background-color: rgb(175, 175, 175);
 }
 
 .line-black {
     border-top: 1px solid black;
 }
 
+.line-white {
+    border-top: 1px solid white;
+}
 
 main {
     position: relative;
@@ -147,13 +170,14 @@ footer {
 
 
 
-@media screen and (max-width: 900px)
+@media screen and (max-width: 1000px)
 {
     header .links a {
         font-size: 20px;
         font-weight: 300;
+        margin-right: 10px;
     }
-    @media screen and (max-width: 800px) 
+    @media screen and (max-width: 900px) 
     {
         body {
             margin-left: 0px;
@@ -165,7 +189,7 @@ footer {
             font-weight: 300;
         }
 
-        @media screen and (max-width: 600px)
+        @media screen and (max-width: 800px)
         {
             .links #small-screen-container {
                 display: flex;
@@ -202,5 +226,9 @@ footer {
     header .links #hidden-logo {
         display: block;
         background-color: whitesmoke;
+    }
+
+    header .links h4, header .links i {
+        display: block;
     }
 }
