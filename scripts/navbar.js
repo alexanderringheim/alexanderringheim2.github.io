@@ -1,6 +1,6 @@
 window.onresize = function() 
 {
-    var elem = document.getElementsByName('body');
+    var body = document.getElementsByName('body');
     var navbar = document.getElementById('');
 };
 
