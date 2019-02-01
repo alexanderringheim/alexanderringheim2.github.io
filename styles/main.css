@@ -246,7 +246,7 @@ footer {
             font-weight: 300;
         }
 
-        @media screen and (max-width: 800px)
+        @media screen and (max-width: 700px)
         {
             .links #small-screen-container {
                 display: flex;
