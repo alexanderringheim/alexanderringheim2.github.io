@@ -201,9 +201,14 @@ main {
     padding-right: 10px;
 }
 
+.txt-container p {
+    font-size: 16px;
+    line-height: 25px;
+}
+
 .info-setup img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
 }
 
 .pos-right {
