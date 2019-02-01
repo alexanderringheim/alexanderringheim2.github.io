@@ -198,16 +198,10 @@ main {
 }
 
 .txt-container {
+    
 }
 
-.image-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.image-container img {
+.info-setup img {
     width: 200px;
     height: 200px;
 }
