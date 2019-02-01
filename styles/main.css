@@ -259,6 +259,10 @@ footer {
             header .nav-title-article {
             display: none;
             }
+            .info-setup img {
+                width: 150px;
+                height: 150px;
+            }
         }
     }
 }
