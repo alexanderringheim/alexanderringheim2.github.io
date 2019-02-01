@@ -257,17 +257,44 @@ footer {
                 display: none;
             }
             header .nav-title-article {
-            display: none;
+                display: none;
             }
             .info-setup img {
                 width: 150px;
                 height: 150px;
             }
+            
+            body {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+            .logo {
+               display: none;
+            }
+
+            header {
+                position: absolute;
+                top: 0px;
+                width: 100%;
+                z-index: 3;
+            }
+
+            main {
+                margin-top: 100px;
+            }
+            header .links #hidden-logo {
+                display: block;
+                background-color: whitesmoke;
+            }
+
+            header .links h4, header .links i {
+                display: block;
+            }
         }
     }
 }
 
-@media screen and (max-height: 600px)
+@media screen and (max-height: 500px)
 {
     body {
         margin-left: 0px;
