@@ -8,8 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="icon" href="../images/logo.png">
-    <link rel="stylesheet" type="text/css" media="screen" href="../styles/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/calc.css">
     <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/calculator.js"></script>
+
 </head>
 
 <body>
@@ -56,7 +59,122 @@
     </header>
 
     <main>
+        <div class="main-container">
+            <h1>Calculator</h1>
+            <section class="info-section">
 
+                <section class="info-setup">
+                    <article class="txt-container">
+                        <h2>Binære talsystem og standard talsystem</h2>
+                        <p>
+                            Fordi datamaskina berre forstår det <a href="../index.html">binære talsystemet</a>, må me ha ein måte
+                            å gjera
+                        </p>
+                    </article>
+                    <article id="table-cont" class="pos-right">
+                        <table>
+                            <tr>
+                                <th colspan="9">Tabell over bit-verdiar</th>
+                            </tr>
+                            <tr>
+                                <td class="table-titles">Values:</td>
+                                <td>128</td>
+                                <td>64</td>
+                                <td>32</td>
+                                <td>16</td>
+                                <td>8</td>
+                                <td>4</td>
+                                <td>2</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td class="table-titles">1:</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td class="table-titles">129:</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td class="table-titles">143:</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                        </table>
+                    </article>
+                </section>
+
+                <div class="separator"></div>
+
+                <section class="info-setup">
+                    <article id="calc-cont">
+                        <table style="width: 250px;" class="calculator pos-left">
+                            <tr>
+                                <th colspan="3">Finner binærtalet av verdi</th>
+                            </tr>
+                            <tr id="calc-result">
+                                <th colspan="3">Binary<b class="flashing-color">_</b></th>
+                            </tr>
+                            <tr id="calc-input">
+                                <th colspan="3">Input<b class="flashing-color">_</b></th>
+                            </tr>
+                            <tr id="calc-row1">
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+                            <tr id="calc-row2">
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                            </tr>
+                            <tr id="calc-row3">
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                            </tr>
+                            <tr id="calc-row4">
+                                <td>x</td>
+                                <td>0</td>
+                                <td>-</td>
+                            </tr>
+                        </table>
+                    </article>
+                    <article class="txt-container">
+                        <h2>Binærkalkulatoren</h2>
+                        <p>
+                            Denne kalkulatoren tar standard tal opp til [WIP] og gjer dei om til binærtal.
+                            Denne versjonen av kalkulatoren krever at du brukar knappane eller tastaturet for å skriva
+                            inn verdien du ynskjer å omgjera til binærkode. Framtidige versjonar vil endra dette sånn at du kan
+                            skriva direkte inn i tekstfeltet. For å angre eit tal, trykk på " - " på kalkulatoren eller "tilbake"
+                            på tastaturet. For å resetta kalkulaturen, trykk på " x " på kalkulatoren.
+                        </p>
+                        
+                    </article>
+                </section>
+
+            </section>
+        </div>
     </main>
     <footer></footer>
 </body>

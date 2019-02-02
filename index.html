@@ -57,7 +57,7 @@
 
     <main>
         <div class="main-container">
-            <h1>Det binære talsystem</h1>
+            <h1>Det binære talsystemet</h1>
             <section class="info-section">
             
                 <section class="info-setup" id="binary-info">
@@ -67,13 +67,49 @@
                             Det binære talsystem (eller binær kode), er eit system designa for datamaskinar. Det binære talsystemet består 
                             kun av to tegn fra det vanlege talsystemet (0 - 9), 0 og 1. Desse tala, 0 og 1 representerer to formar,
                             strøm <u><i>på</i></u> (1) og strøm <u><i>av</i></u> (0). Dette er fordi datamaskina forstår berre desse to formane.
-                            
+                            Å veksle mellom det binære talsystemet og standard talsystem er ganske enkelt. Prosessen består av enkle addisjonar i
+                            ein tabell. På denne nettsida vil du finna ein kalkulator som oversette binær kode til vanleg kode for deg.
+                        </p>
+                        <p>
+                            Sidan me og brukar tegn som ikkje er tal, er det og eit system for å gjera tal om til bokstavar og andre tegn.
+                            Til dette brukar me det me kallar eit tegnsystem. Eit tegnsystem gjer alle bokstavar ei kvar si verdi som kan gjerast om til binærkode, 
+                            og når desse vert brukt vil datamaskina sjå den binære koden til den verdien. Det mest vanlege tensystemet i dag er
+                            UTF-8 (8-bits Unicode Transformation Format). Dette systemet er eit 8bits tegnsystem, 
+                            noko som tyder at den bruker nok bits til å ha ein verdi til nesten
+                            alle tegn me bruker no i dag, som til dømes æ, ø og å.
+                            Eit eksempel på korleis tegnsystemet funker er å sjå dei tegnverdiane som vert brukt ofte i HTML webdesigning. "&#60" og "&#62".
+                            I HTML vert desse tegna brukt til å åpna og avslutta taggar, noko som gjer at ein ikkje kan skriva inn dei fysiske tegna
+                            i HTML-dokumentet. Her må man referera til verdien dei har fått av tegnsystemet, i dette tilfellet UTF-8. Då må ein
+                            skriva inn " & # 60" (utan mellomrom) for &#60, og " & # 62" (også utan mellomrom) for &#62. & # 61 gjer tegnet &#61, og som me
+                            kan sjå, gjer dette oss =. Dette tegnet kan skrivast inn ved å bruka tegnet, men dette viser oss at me kan og bruka tegnverdien den har 
+                            for å få den på skjermen.
                         </p>
                     </article>
-                    <a class="pos-right" href="images/binary_green.jpg"><img src="images/binary_green.jpg" alt="Image of the binary system"></a>
+                    <a class="pos-right" href="images/binary_green.jpg">
+                        <img src="images/binary_green.jpg" alt="Image of the binary system">
+                        <br>
+                        <i>Binær kode</i>
+                    </a>
+                </section>
+                <div class="separator"></div>
+                <section class="info-setup">
+                    <a href="images/bitsogbytes.png" class="pos-left">
+                        <img src="images/bitsogbytes.png" alt="Bits og Bytes bilde" style="width: 200px; height: 100px;">
+                        <br>
+                        <i>Bits og Bytes illustrasjon</i>
+                    </a>
+                    <article class="txt-container">
+                        <h2>Lagring</h2>
+                        <p>
+                            Lagring på ei datamaskin består av at datamaskina gjer om elementet til ei rekka med binære tal som vert lagra.
+                            Kvart binære tal som vert lagra kallar me ein <a href="pages/bits.html">bit</a>. Bits er den meste vanlege einingen
+                            å bruka dersom ein reknar hastigheit på internettilkoblingen som til dømes når ein strømmer ein <a href="pages/video.html">video</a>
+                            online. Ein anna eining som er meir vanleg å bruka når ein reknar <a href="pages/image.html">bilder</a> eller <a href="pages/sound.html">lyd</a>
+                            på den fysiske datamaskinen er <a href="pages/bytes.html">bytes</a>.
+                        </p>
+                    </article>
                 </section>
             </section>
-            <div class="separator"></div>
         </div>
     </main>
     <footer></footer>

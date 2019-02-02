@@ -1,0 +1,53 @@
+table, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: center;
+}
+table {
+    border: 2px solid black;
+}
+th {
+    padding: 15px;
+}
+.table-titles {
+    font-weight: bold;
+}
+#table-cont th {
+    font-size: 18px;
+}
+
+#calc-result, #calc-input {
+    text-align: right;
+}
+
+.calculator td {
+    cursor: pointer;
+}
+
+.calculator td:hover {
+    background-color: lightgray;
+    font-weight: bold;
+}
+@media screen and (max-width: 750px)
+{
+    .info-setup {
+        flex-direction: column;
+    }
+    #table-cont {
+        margin-left: 0px;
+        align-self: center;
+    }
+    #calc-cont {
+        margin-left: 0px;
+        align-self: center;
+    }
+
+    .info-setup h2 {
+        text-align: center;
+    }
+
+    #calc-cont {
+        margin-bottom: 30px;
+    }
+}
