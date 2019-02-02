@@ -132,39 +132,39 @@
                             <tr>
                                 <th colspan="3">Finner binærtalet av verdi</th>
                             </tr>
-                            <tr id="calc-result">
-                                <th colspan="3">Binary<b class="flashing-color">_</b></th>
+                            <tr>
+                                <th colspan="3" id="calc-result">Binary<b class="flashing-color">_</b></th>
                             </tr>
-                            <tr id="calc-input">
-                                <th colspan="3">Input<b class="flashing-color">_</b></th>
+                            <tr>
+                                <th colspan="3" id="calc-input">Input<b class="flashing-color">_</b></th>
                             </tr>
                             <tr id="calc-row1">
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
+                                <td onclick="appendNumber(1)">1</td>
+                                <td onclick="appendNumber(2)">2</td>
+                                <td onclick="appendNumber(3)">3</td>
                             </tr>
                             <tr id="calc-row2">
-                                <td>4</td>
-                                <td>5</td>
-                                <td>6</td>
+                                <td onclick="appendNumber(4)">4</td>
+                                <td onclick="appendNumber(5)">5</td>
+                                <td onclick="appendNumber(6)">6</td>
                             </tr>
                             <tr id="calc-row3">
-                                <td>7</td>
-                                <td>8</td>
-                                <td>9</td>
+                                <td onclick="appendNumber(7)">7</td>
+                                <td onclick="appendNumber(8)">8</td>
+                                <td onclick="appendNumber(9)">9</td>
                             </tr>
                             <tr id="calc-row4">
-                                <td>x</td>
-                                <td>0</td>
-                                <td>-</td>
+                                <td onclick="reset()">x</td>
+                                <td onclick="appendNumber(0)">0</td>
+                                <td onclick="back()">-</td>
                             </tr>
                         </table>
                     </article>
                     <article class="txt-container">
                         <h2>Binærkalkulatoren</h2>
                         <p>
-                            Denne kalkulatoren tar standard tal opp til [WIP] og gjer dei om til binærtal.
-                            Denne versjonen av kalkulatoren krever at du brukar knappane eller tastaturet for å skriva
+                            Denne kalkulatoren tar standard tal opp til <u><b>65535</b></u> og gjer dei om til binærtal.
+                            Denne versjonen av kalkulatoren krever at du brukar knappane på kalkulatoren for å skriva
                             inn verdien du ynskjer å omgjera til binærkode. Framtidige versjonar vil endra dette sånn at du kan
                             skriva direkte inn i tekstfeltet. For å angre eit tal, trykk på " - " på kalkulatoren eller "tilbake"
                             på tastaturet. For å resetta kalkulaturen, trykk på " x " på kalkulatoren.
