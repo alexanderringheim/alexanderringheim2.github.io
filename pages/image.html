@@ -10,6 +10,26 @@
     <link rel="icon" href="../images/logo.png">
     <link rel="stylesheet" type="text/css" media="screen" href="../styles/main.css" />
     <script src="../scripts/navbar.js"></script>
+
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+        .gallery img {
+            width: 200px;
+            height: 200px;
+        }
+        @media screen and (max-width: 800px)
+        {
+            .gallery {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -56,9 +76,82 @@
     </header>
 
     <main>
+        <div class="main-container">
+            <h1>Bilder</h1>
+            <section class="info-section">
 
+                <audio src="../sound/prosjektIT2019_image1.mp3" controls></audio>
+                <section class="info-setup">
+                    <article class="txt-container">
+                        <h2>Lagring</h2>
+                        <p>
+                            Bilder er ein av filtypane man ofte finner på ein datamaskin. Eit bilder består av mangfoldige pixlar
+                            med ulike fargar som utgjer formar i det store bildet. Når ein datamaskin lagrar eit bilde må kvar pixel 
+                            lagrast ved hjelp av bits og bytes. Alle pixlane vert lagra med verdiar på som avgjer fargane. Eit eksempel
+                            er RGB (Red, Green, Blue) fargekodar, der verdiane vil avgjera kor mykje av kvar farge det skal være, og fargane
+                            vil blanda seg og danna ein anna farge.
+                        </p>
+                    </article>
+                    <a href="../images/image.jpg" class="pos-right">
+                        <img src="../images/image.jpg" alt="Illustrasjon av bildelagring">
+                        <br>
+                        <i>Farge til bits</i>
+                    </a>
+                </section>
+
+                <div class="separator"></div>
+
+                <audio src="../sound/prosjektIT2019_image2.mp3" controls></audio>
+                <section class="info-setup">
+                    <article class="txt-container">
+                        <h2>Komprimering</h2>
+                        <p>
+                            I dag har me fleire ulike typar filformat for eit bilde på ei datamaskin. Me har for eksempel
+                            png, jpg, gif og png-8. Grunnen til at me har fleire er at dei har alle ulikskapar som gjer dei egna for
+                            diverse ting. 
+                        </p>
+                        <p>
+                            JPG har det me kallar ei destruktiv komprimering. Dette vil seie at dersom bildet som vert
+                            lagra har fleir identiske pixlar attmed ein annan, som f.eks: 
+                            [ (200,200,200) (200,200,200) (200,200,200) (230,210,200) ],
+                            so kan JPG formatet komprimera desse identiske ved å sette eit antallsnummer foran fargekodelagringa. Det
+                            vil då sjå sånn ut: [ 3(200,200,200) (230,210,200) ]. Ved å gjera dette sparar ein mykje lagringsplass. Ulempa med
+                            dette er
+                            at pixlane på eit bilde kan verta so identiske at bildekvaliteten går ned fordi ein ser pixlane betre.
+                        </p>
+                        <p>
+                            PNG har det me kaller tapsfri kompresjon, altså bildet vil lagre alle fargekodane til pixlane separat, uansett
+                            om dei er identiske med sidemannen. Dette gjer at bildekvaliteten aukar, men det gjer og at plassauken vert større 
+                            for bildet.
+                        </p>
+                    </article>
+                </section>
+
+                <div class="separator"></div>
+
+                <section class="info-setup">
+                    <article class="txt-container">
+                        <h2>Gallery</h2>
+                        <p>Her finner du eit galleri av alle bilder brukt på sida</p>
+                    </article>
+                </section>
+                <section class="gallery">
+                    
+                    <img src="../images/background.jpg" alt="Bakgrunn">
+                    <img src="../images/binary_green.jpg" alt="Binærkode">
+                    <img src="../images/bits.jpg" alt="Bits">
+                    <img src="../images/bitsogbytes.png" alt="Bits og Bytes">
+                    <img src="../images/bytes.jpg" alt="Bytes">
+                    <img src="../images/harddrive.jpg" alt="Harddisk">
+                    <img src="../images/image.jpg" alt="Bilde">
+                    <img src="../images/logo.png" alt="Logo">
+                    <img src="../images/microphone.jpg" alt="Mikrofon">
+                    <img src="../images/video.png" alt="Video">
+                </section>
+
+            </section>
+        </div>
     </main>
-    <footer></footer>
 </body>
 
 </html>
